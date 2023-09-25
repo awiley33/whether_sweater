@@ -16,11 +16,11 @@ RSpec.describe "Book Service", :vcr do
       expect(parsed_response[:data][:attributes][:forecast]).to be_a Hash
 
       expect(parsed_response[:data][:attributes]).to have_key(:total_books_found)
-      expect(parsed_response[:data][:attributes][:destination]).to be_an Integer
+      expect(parsed_response[:data][:attributes][:total_books_found]).to be_an Integer
 
       expect(parsed_response[:data][:attributes]).to have_key(:books)
-      expect(parsed_response[:data][:attributes][:destination]).to be_an Array
-      expect(parsed_response[:data][:attributes][:destination].count).to eq(5)
+      expect(parsed_response[:data][:attributes][:books]).to be_an Array
+      expect(parsed_response[:data][:attributes][:books].count).to eq(5)
     end
   end
 end
