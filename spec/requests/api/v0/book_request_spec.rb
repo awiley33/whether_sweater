@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Book Service", :vcr do
   describe "happy path" do
     it "can get books related to destination" do
-      get "/api/v1/book-search?location=denver,co&quantity=5"
+      get "/api/v0/book-search?location=denver,co&quantity=5"
       expect(response.status).to eq(200)
       parsed_response = JSON.parse(response.body, symbolize_names: true)
       expect(parsed_response[:data]).to be_a Hash

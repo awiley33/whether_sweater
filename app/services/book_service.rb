@@ -1,7 +1,6 @@
-class LocationService
+class BookService
   def conn
     Faraday.new(url: "https://openlibrary.org")
-    end
   end
 
   def get_url(url)
