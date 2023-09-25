@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=KEY&location=chicago,il
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Key:
+      - 26ermZtcm4Y4kUyeR2xXhM0cq3GW24fA
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Sep 2023 02:34:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '795'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14991'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14991'
+      Ratelimit-Reset:
+      - '2078724'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 114bda90-5b4c-11ee-8b6e-7b0d1ad2aaa0
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"31b-JPyV2g5KtsFtowDZBlFJhcPpQrI"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJjaGljYWdvLGlsIn0sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkNoaWNhZ28iLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiQ29vayIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IklMIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0Ijo0MS44ODQyNSwibG5nIjotODcuNjMyNDV9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NDEuODg0MjUsImxuZyI6LTg3LjYzMjQ1fSwibWFwVXJsIjoiIn1dfV19
+  recorded_at: Mon, 25 Sep 2023 02:34:36 GMT
+recorded_with: VCR 6.2.0
