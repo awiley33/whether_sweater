@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Book do
   it "exists and has attributes" do
     data = {
+      "quantity_found": 150,
       "key": "/works/OL8503198W",
       "type": "work",
       "seed": [
@@ -61,5 +62,6 @@ RSpec.describe Book do
       "9780762507849"
     ])
     expect(book.title).to eq("Denver, Co")
+    expect(book.quantity_found).to eq(150)
   end
 end
