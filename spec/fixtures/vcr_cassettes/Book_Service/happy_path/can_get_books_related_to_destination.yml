@@ -21,7 +21,9 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
+
       - Mon, 25 Sep 2023 16:08:49 GMT
+
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,7 +37,9 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
+
       - '"SR 1 0.085 TT 0 0.086"'
+
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:

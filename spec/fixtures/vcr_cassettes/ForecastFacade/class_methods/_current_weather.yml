@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 25 Sep 2023 05:18:29 GMT
+      - Mon, 25 Sep 2023 17:04:30 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -31,7 +31,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-1069
+      - BunnyCDN-IL1-1070
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -45,7 +45,7 @@ http_interactions:
       Via:
       - 1.1 varnish (Varnish/6.0)
       X-Varnish:
-      - '518817092'
+      - '848429879'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -53,21 +53,20 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - '09/25/2023 05:18:29'
+      - '09/25/2023 17:04:30'
       Cdn-Edgestorageid:
       - '1068'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 3dec8f20b89753d5e6f5b7a48e34ad4b
+      - 6e07e751f9e2460d11a920624f5238a8
       Cdn-Cache:
       - EXPIRED
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"Newport","region":"Kentucky","country":"United
-        States of America","lat":39.11,"lon":-84.5,"tz_id":"America/New_York","localtime_epoch":1695619060,"localtime":"2023-09-25
-        1:17"},"current":{"last_updated_epoch":1695618900,"last_updated":"2023-09-25
-        01:15","temp_c":17.2,"temp_f":63.0,"is_day":0,"condition":{"text":"Partly
-        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":3.8,"wind_kph":6.1,"wind_degree":30,"wind_dir":"NNE","pressure_mb":1017.0,"pressure_in":30.04,"precip_mm":0.0,"precip_in":0.0,"humidity":87,"cloud":25,"feelslike_c":17.2,"feelslike_f":63.0,"vis_km":16.0,"vis_miles":9.0,"uv":1.0,"gust_mph":8.6,"gust_kph":13.9}}'
-  recorded_at: Mon, 25 Sep 2023 05:18:29 GMT
+        States of America","lat":39.11,"lon":-84.5,"tz_id":"America/New_York","localtime_epoch":1695661426,"localtime":"2023-09-25
+        13:03"},"current":{"last_updated_epoch":1695661200,"last_updated":"2023-09-25
+        13:00","temp_c":22.8,"temp_f":73.0,"is_day":1,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/day/122.png","code":1009},"wind_mph":4.3,"wind_kph":6.8,"wind_degree":60,"wind_dir":"ENE","pressure_mb":1019.0,"pressure_in":30.09,"precip_mm":0.0,"precip_in":0.0,"humidity":64,"cloud":100,"feelslike_c":24.8,"feelslike_f":76.7,"vis_km":16.0,"vis_miles":9.0,"uv":6.0,"gust_mph":5.1,"gust_kph":8.3}}'
+  recorded_at: Mon, 25 Sep 2023 17:04:30 GMT
 recorded_with: VCR 6.2.0
