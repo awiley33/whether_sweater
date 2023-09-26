@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get 'api/v0/forecast', to: "api/v0/forecast#show"
-  post 'api/v0/users'
+  post 'api/v0/users', to: "api/v0/users#create"
 end
