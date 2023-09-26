@@ -21,7 +21,9 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Mon, 25 Sep 2023 17:04:31 GMT
+
+      - Mon, 25 Sep 2023 16:08:49 GMT
+
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,7 +37,9 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"SR 1 0.069 TT 0 0.070"'
+
+      - '"SR 1 0.085 TT 0 0.086"'
+
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
@@ -446,125 +450,5 @@ http_interactions:
             "q": "denver co",
             "offset": null
         }
-  recorded_at: Mon, 25 Sep 2023 17:04:31 GMT
-- request:
-    method: get
-    uri: https://www.mapquestapi.com/geocoding/v1/address?key=KEY&location=denver,co
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Key:
-      - 26ermZtcm4Y4kUyeR2xXhM0cq3GW24fA
-      User-Agent:
-      - Faraday v2.7.11
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Mon, 25 Sep 2023 17:04:32 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '797'
-      Connection:
-      - keep-alive
-      X-Ratelimit-Limit-2628000:
-      - '15000'
-      X-Ratelimit-Remaining-2628000:
-      - '14983'
-      Ratelimit-Limit:
-      - '15000'
-      Ratelimit-Remaining:
-      - '14983'
-      Ratelimit-Reset:
-      - '2026528'
-      X-Powered-By:
-      - MapQuest
-      X-Request-Id:
-      - 987ce170-5bc5-11ee-991f-9bcc38e71990
-      Access-Control-Allow-Origin:
-      - "*"
-      Etag:
-      - W/"31d-e6U4VUsIusqpoCnMOLAMG4TFeGE"
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJkZW52ZXIsY28ifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiRGVudmVyIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkRlbnZlciIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkNPIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS43NDAwMSwibG5nIjotMTA0Ljk5MjAyfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM5Ljc0MDAxLCJsbmciOi0xMDQuOTkyMDJ9LCJtYXBVcmwiOiIifV19XX0=
-  recorded_at: Mon, 25 Sep 2023 17:04:32 GMT
-- request:
-    method: get
-    uri: http://api.weatherapi.com/v1/current.json?aqi=no&q=39.74001,-104.99202
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Key:
-      - d1202329dcfc48c1b04204122232409
-      User-Agent:
-      - Faraday v2.7.11
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Mon, 25 Sep 2023 17:04:32 GMT
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Vary:
-      - Accept-Encoding
-      Server:
-      - BunnyCDN-IL1-1070
-      Cdn-Pullzone:
-      - '93447'
-      Cdn-Uid:
-      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
-      Cdn-Requestcountrycode:
-      - US
-      Age:
-      - '0'
-      Cache-Control:
-      - public, max-age=180
-      Via:
-      - 1.1 haproxy-api-1 (Varnish/7.3)
-      X-Varnish:
-      - '863144092'
-      Cdn-Proxyver:
-      - '1.04'
-      Cdn-Requestpullsuccess:
-      - 'True'
-      Cdn-Requestpullcode:
-      - '200'
-      Cdn-Cachedat:
-      - '09/25/2023 17:04:32'
-      Cdn-Edgestorageid:
-      - '1029'
-      Cdn-Status:
-      - '200'
-      Cdn-Requestid:
-      - f289380390c6aa6eb678b874bff376de
-      Cdn-Cache:
-      - EXPIRED
-    body:
-      encoding: ASCII-8BIT
-      string: '{"location":{"name":"Denver","region":"Colorado","country":"United
-        States of America","lat":39.74,"lon":-104.99,"tz_id":"America/Denver","localtime_epoch":1695661471,"localtime":"2023-09-25
-        11:04"},"current":{"last_updated_epoch":1695661200,"last_updated":"2023-09-25
-        11:00","temp_c":19.9,"temp_f":67.8,"is_day":1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"wind_mph":10.5,"wind_kph":16.9,"wind_degree":220,"wind_dir":"SW","pressure_mb":1026.0,"pressure_in":30.3,"precip_mm":0.0,"precip_in":0.0,"humidity":25,"cloud":0,"feelslike_c":19.9,"feelslike_f":67.8,"vis_km":16.0,"vis_miles":9.0,"uv":6.0,"gust_mph":1.0,"gust_kph":1.7}}'
-  recorded_at: Mon, 25 Sep 2023 17:04:32 GMT
+  recorded_at: Mon, 25 Sep 2023 16:08:49 GMT
 recorded_with: VCR 6.2.0
