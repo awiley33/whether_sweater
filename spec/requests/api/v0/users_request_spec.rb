@@ -34,6 +34,7 @@ RSpec.describe "Users API" do
       expect(data[:errors].first[:detail]).to eq("Validation failed: Email can't be blank")
     end
   end
+
   describe "login" do
     before do
       params = ({
@@ -60,5 +61,15 @@ RSpec.describe "Users API" do
       expect(parsed_response[:data][:attributes][:api_key]).to eq(@user.api_key)
     end
 
+    it "does not allow login with bad credentials" do
+      params = {
+      "email": "anna@example.com",
+      "password": "bob"
+      }
+      post "/api/v0/sessions", params: params, as: :json
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(401)
+    end
   end
 end
