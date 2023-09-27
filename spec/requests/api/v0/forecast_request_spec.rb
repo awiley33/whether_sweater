@@ -103,8 +103,4 @@ RSpec.describe "Forecast Service", :vcr do
       expect(hourly_weather[0]).to_not have_key(:feels_like)
     end
   end
-
-  describe "sad path" do
-
-  end
 end
