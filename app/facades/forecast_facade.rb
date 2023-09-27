@@ -20,4 +20,13 @@ class ForecastFacade
       HourlyForecast.new(forecast_data)
     end
   end
+
+  def self.weather_at_eta(location, day, hour)
+    service = ForecastService.new
+    response = service.weather_at_eta(location, day, hour)
+    data = response[:forecast][:forecastday][0][:hour]
+    DestinationForecast.new(datetime: data[0][:time],
+                            temperature: data[0][:temp_f],
+                            condition: data[0][:condition][:text])
+  end
 end

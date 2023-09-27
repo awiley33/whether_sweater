@@ -21,4 +21,8 @@ class ForecastService
   def hourly_weather(coords)
     get_url("v1/forecast.json?q=#{coords}&days=1&aqi=yes&alerts=no&hours=24")
   end
+
+  def weather_at_eta(location, day, hour)
+    get_url("v1/forecast.json?q=#{location}&aqi=no&alerts=no&dt=#{day}&hour=#{hour}")
+  end
 end
